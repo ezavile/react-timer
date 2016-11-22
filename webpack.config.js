@@ -7,7 +7,7 @@ module.exports = {
     './app/app.jsx'
   ],
   externals: {
-    jquery: 'jQuery',
+    jquery: 'jQuery'
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -22,11 +22,12 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
+      applicationStyles: 'app/styles/app.scss',
       Main: 'app/components/Main.jsx',
       Navigation: 'app/components/Navigation.jsx',
       Countdown: 'app/components/Countdown.jsx',
       Timer: 'app/components/Timer.jsx',
-      applicationStyles: 'app/styles/app.scss'
+      Clock: 'app/components/Clock.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
