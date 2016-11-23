@@ -7,7 +7,9 @@ module.exports = {
     './app/app.jsx'
   ],
   externals: {
-    jquery: 'jQuery'
+    // require("jquery") is external and available
+    //  on the global var jQuery
+    "jquery": "jQuery"
   },
   plugins: [
     new webpack.ProvidePlugin({
