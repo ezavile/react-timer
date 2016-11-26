@@ -18,6 +18,8 @@ var Countdown = React.createClass({
                     break;
                 case 'stopped':
                     this.setState({count: 0});
+                    clearInterval(this.timer);
+                    this.timer = null;
                     break;
                 case 'paused':
                     clearInterval(this.timer);
